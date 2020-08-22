@@ -30,7 +30,7 @@ jQuery(document).ready(function() {
         Background slideshow
     */
 	/*$('.top-content').backstretch("assets/img/backgrounds/blur-close-up-color-dark-1129253.jpg");*/
-	$('.top-content').backstretch("assets/img/backgrounds/smoke-trail.jpg");
+	//$('.top-content').backstretch("assets/img/backgrounds/smoke-trail.jpg");
     $('.call-to-action-container').backstretch("assets/img/backgrounds/1.jpg");
 	$('.testimonials-container').backstretch("assets/img/backgrounds/1.jpg");
 	//$('.about-us-container').backstretch("assets/img/about/miami.jpg");
