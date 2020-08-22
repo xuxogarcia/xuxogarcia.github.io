@@ -169,7 +169,7 @@ img { max-width: 100%; }
 .navbar {
     /*background: #444;*/
 	/*background-color: rgba (256,256,256, 0.7);*/
-	background-color: #0071B9;
+	background-color:gray;
 
 	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
 	*backface-visibility: hidden;*
