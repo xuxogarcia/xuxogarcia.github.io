@@ -500,6 +500,234 @@ img { max-width: 100%; }
 }
 
 
+/***** Hero page (full-page background + left sidebar) *****/
+
+.hero-page {
+	min-height: 100vh;
+	background: #111;
+	color: #e0e0e0;
+	text-align: left;
+}
+
+.hero-content a {
+	color: #e0e0e0;
+}
+
+.hero-content a:hover,
+.hero-content a:focus {
+	color: #fff;
+}
+
+/* Full-page stretchable responsive background */
+.hero-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url("../img/hero.png") center center no-repeat;
+	background-size: cover;
+	filter: grayscale(100%);
+	z-index: 0;
+}
+
+.hero-content {
+	position: relative;
+	z-index: 1;
+	min-height: 100vh;
+	padding: 1.5rem 1.25rem 2rem;
+	max-width: 420px;
+}
+
+@media (min-width: 576px) {
+	.hero-content {
+		padding: 2rem 2rem 3rem;
+	}
+}
+
+.hero-header {
+	margin-bottom: 1.5rem;
+	padding: 0.5rem 0;
+}
+
+.hero-logo-link {
+	display: block;
+	padding: 0.25rem 0;
+	text-decoration: none;
+	width: 95%;
+	max-width: 100%;
+}
+
+.hero-logo {
+	display: block;
+	width: 100%;
+	height: auto;
+	filter: grayscale(100%) brightness(1.05);
+	transition: filter 0.2s;
+}
+
+.hero-logo-link:hover .hero-logo,
+.hero-logo-link:focus .hero-logo {
+	filter: grayscale(100%) brightness(1.2);
+}
+
+/***** Repos sidebar (left column) *****/
+
+.repos-sidebar {
+	width: 100%;
+}
+
+.repos-heading {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #c00;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin-bottom: 1rem;
+}
+
+.repo-cards {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+	margin-bottom: 1.75rem;
+}
+
+.repo-loading,
+.repo-error {
+	color: #888;
+	font-size: 0.95rem;
+}
+
+.repo-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 0.25rem;
+	padding: 0.75rem 0.9rem;
+	background: transparent;
+	border: 1px solid #08c;
+	border-radius: 6px;
+	color: #08c;
+	text-decoration: none;
+	transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.repo-card:hover,
+.repo-card:focus {
+	background: rgba(0, 136, 204, 0.08);
+	border-color: #c00;
+	color: #c00;
+}
+
+.repo-card-title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: #000;
+	word-break: break-word;
+}
+
+.repo-card-desc {
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: #39c;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.repo-card:hover .repo-card-desc,
+.repo-card:focus .repo-card-desc {
+	color: #e66;
+}
+
+.repo-card-meta {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	flex-wrap: wrap;
+	font-size: 0.75rem;
+	color: #08c;
+}
+
+.repo-card:hover .repo-card-meta,
+.repo-card:focus .repo-card-meta {
+	color: #c00;
+}
+
+.repo-badge {
+	background: rgba(0, 136, 204, 0.2);
+	color: #08c;
+	padding: 0.15rem 0.4rem;
+	border-radius: 4px;
+}
+
+.repo-card:hover .repo-badge,
+.repo-card:focus .repo-badge {
+	background: rgba(204, 0, 0, 0.2);
+	color: #c00;
+}
+
+.repo-stars {
+	white-space: nowrap;
+}
+
+/***** Social links (below repos) *****/
+
+.social-links {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.social-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	color: #fff;
+	text-decoration: none;
+	background: #000;
+	border: none;
+	border-radius: 50%;
+	transition: opacity 0.2s, transform 0.2s;
+}
+
+.social-link:hover,
+.social-link:focus {
+	opacity: 0.85;
+	transform: scale(1.05);
+}
+
+.social-link i {
+	font-size: 1.1rem;
+}
+
+/***** Legacy / other pages (repositories section in old layout) *****/
+
+.repositories-container {
+	background: #1a1a1a;
+	color: #ccc;
+}
+
+.repositories-container h2 {
+	color: #eee;
+}
+
+.repositories-container .section-description p a {
+	color: #9b59b6;
+}
+
+.repo-cards-row {
+	justify-content: center;
+}
+
+
 /***** Footer *****/
 
 footer {
