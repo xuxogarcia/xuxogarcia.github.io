@@ -571,6 +571,20 @@ img { max-width: 100%; }
 	filter: grayscale(100%) brightness(1.2);
 }
 
+.hero-bio {
+	font-size: 0.8rem;
+	line-height: 1.5;
+	color: #333;
+	margin: 0.75rem 0 0;
+	max-width: 100%;
+}
+
+@media (min-width: 576px) {
+	.hero-bio {
+		font-size: 0.85rem;
+	}
+}
+
 /***** Repos sidebar (left column) *****/
 
 .repos-sidebar {
